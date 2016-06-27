@@ -21,7 +21,7 @@ void error(const char *msg)
 }
 
 
-  int send_file(int socket){
+ int send_file(int socket){
 
    FILE *file;
    int size, read_size, stat, packet_index;
@@ -70,7 +70,8 @@ void error(const char *msg)
       //Zero out our send buffer
       bzero(send_buffer, sizeof(send_buffer));
      }
-    }
+ 	
+ }
 
 int receive_file(int socket)
 { // Start function 
